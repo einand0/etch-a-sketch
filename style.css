@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    background-color: coral;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sketch-wrapper{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#sketch-buttons{
+    height: 90%;
+    background-color: #fff;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sketch-buttons button{
+    background-color: rgb(173, 48, 2);
+    border: none;
+    width: 50px;
+    height: 30px;
+    color: #fff;
+    border-radius: 10px;
+    transition: all .8s;
+}
+
+#sketch-buttons button:hover{
+    background-color: cornflowerblue;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#sketch-grid{
+    background-color: #fff;
+    width: 700px;
+    height: 90%;
+    display: grid;
+    grid-template-rows: repeat(16, auto);
+    grid-template-columns: repeat(16, auto);
+    flex-wrap: wrap;
+}
+
+.square{
+    border: 1px solid rgb(65, 62, 62);
+}
+
+.hover{
+    background-color: black;
+}
